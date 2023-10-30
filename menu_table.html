@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table, pseudo-class, colspan rowspan</title>
+    <!-- <link rel="stylesheet" type="text/css" href="creative.css"> -->
+<style>
+ .image{
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        border:1px solid black
+    }   
+
+table,th, td {
+  border: 3px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  /* border-radius: 20px; */
+}
+td {
+  background-color: #ae82da;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  font-weight: bolder;
+}
+th{
+    background-color: hsla(0, 0%, 9%, 0.819);
+}
+table{
+    position:relative;
+    left: 200px;
+    top: 30px;
+}
+body{
+    background-image: url(wallpaper/dark.jpg);
+    background-size:cover;
+  
+}
+td:nth-child(even){
+    background-color: #b7ba7b;
+    text-align: center;
+
+}
+td:nth-child(even):hover{
+    background-color: #eaf256;
+    font-weight: bolder;
+}
+
+td:nth-child(odd):hover{
+    background-color:#994ee3;
+}
+
+/* th.image:hover{
+    transition: 3s ease-in-out;
+} */
+img:hover{
+    border-radius: 40px;
+    border: 2px solid #eaf256 ;
+    box-shadow: 0px 0px 10px rgb(229, 229, 229);
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+ <h1 style="text-align:center; position: relative; top: 20px; color:white;"><b>SPECIAL BIRYANI PARK</b></h1>
+ <table style="width: 70%;">
+    <!-- <colgroup>
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+      </colgroup> -->
+    <tr>
+        <th rowspan="7"><img class="image" src="images/veg.jpeg" alt="veg"></th>
+        <td colspan="2" style="text-align: center; font-weight: bolder;">VEG BIRYANI</td>
+        
+    </tr>
+    <tr>
+        <td>Paneer Biryani</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>Jeera Biryani</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>Paneer Biryani</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>Jeera Biryani</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>Curd Rice</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>Steam Rice</td>
+        <td>250</td>
+        
+    </tr>
+
+    <tr>
+        <th rowspan="6"><img class="image" src="images/nonveg.jpeg" alt="non-veg"></th>
+        <td colspan="2" style="text-align: center; font-weight: bolder;">NON-VEG BIRYANI</td>
+       
+    </tr>
+    <tr>
+        <td>Spl. Chicken Biryani(Bone)</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>Chicken 65 Biryani (Boneless)</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>Mutton Biryani</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>Prawns Biryani</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <td>Egg Biryani</td>
+        <td>300</td>
+    </tr>
+
+    <tr>
+        <th rowspan="5"><img class="image"  src="images/pulav.jpeg" alt="pulav" style="width:200px; height:200px;" ></th>
+        <td colspan="2" style="text-align: center; font-weight: bolder;">VEG PULAV</td>
+        
+    </tr>
+    <tr>
+        <td>Kaju Pulav</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>Jeera Pulav</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>Paneer Pulav</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>rajugari Kodi Pulav</td>
+        <td>200</td>
+    </tr>
+    
+</table>
+<br><br>
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+   
+</body>
+</html>            
